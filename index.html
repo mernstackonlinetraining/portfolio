@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://use.fontawesome.com/releases/v6.1.0/js/all.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://kit.fontawesome.com/yourcode.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      /* Set the width of the scrollbar */
+      ::-webkit-scrollbar {
+        width: 5px;
+      }
+
+      /* Set the background color of the track */
+      ::-webkit-scrollbar-track {
+        background-color: #e7bcae;
+      }
+
+      /* Set the color of the thumb */
+      ::-webkit-scrollbar-thumb {
+        background-color: #da1d1d;
+        border-radius: 5px;
+      }
+
+      /* Set the color of the thumb on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background-color: #f94b00;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="header">
+      <span><a href="">MERN Training</a></span>
+      <ul class="hide">
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+      <!-- <button class="menuButton">
+            Menu
+            <i class="fas fa-bars"></i>
+        </button> -->
+    </header>
+    <header class="mobileMenu">
+      <ul class="" type="none">
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </header>
+
+    <main>
+      <section class="home" id="home_section">
+        <!-- <i class="fa fa-user-circle-o" style="font-size:250px"></i> -->
+        <img class="userImg" src="./user.svg" alt="" height="250px" />
+        <br />
+        <h1>MERN Training</h1>
+        <div class="divider-custom">
+          <span class="divider-custom-line"></span>
+          <img
+            src="https://static.vecteezy.com/system/resources/previews/009/381/053/original/mobile-game-golden-star-clipart-design-illustration-free-png.png"
+            alt=""
+            height="20px"
+          />
+          <span class="divider-custom-line"></span>
+        </div>
+        <h3 class="profileSkills">
+          HTML5 | CSS3 | JavaScript | React js | Node js | Express js | MongoDB
+        </h3>
+        <br /><br />
+        <br /><br />
+      </section>
+      <section class="projects" id="projects">
+        <h1>Projects</h1>
+        <div class="divider-custom">
+          <span class="divider-custom-line"></span>
+          <img
+            src="https://static.vecteezy.com/system/resources/previews/009/381/053/original/mobile-game-golden-star-clipart-design-illustration-free-png.png"
+            alt=""
+            height="20px"
+          />
+          <span class="divider-custom-line"></span>
+        </div>
+        <br />
+        <div class="projectsContainer">
+          <div
+            class="projectCard"
+            onclick="redirectToProject(`https://Karthickselvendran.github.io/counter`)"
+          >
+            <img
+              src="https://media.istockphoto.com/id/1153284435/vector/plus-and-minus-sign-set-vector.jpg?s=612x612&w=0&k=20&c=cG-a_VcLVHzzFYvCm8OcJaCyKyyOW4Zubg1bElXmd8M="
+              alt=""
+              height="100px"
+            />
+            <br />
+            <h2>Counter</h2>
+          </div>
+          <div
+            class="projectCard"
+            onclick="redirectToProject(`https://karthickselvendran.github.io/bmi_calculator`)"
+          >
+            <img
+              src="https://m.media-amazon.com/images/I/61iSsiqXqqL.png"
+              alt=""
+              height="100px"
+            />
+            <br />
+            <h2>BMI Calculator</h2>
+          </div>
+          <div
+            class="projectCard"
+            onclick="redirectToProject(`https://Karthickselvendran.github.io/todo/`)"
+          >
+            <img
+              src="https://zenkit.com/wp-content/uploads/2021/01/zenkit-todo-favicon.png"
+              alt=""
+              height="100px"
+            />
+            <br />
+            <h2>Todo</h2>
+          </div>
+          <div
+            class="projectCard"
+            onclick="redirectToProject(`https://Karthickselvendran.github.io/calculator`)"
+          >
+            <img
+              src="https://media.istockphoto.com/id/1000600468/vector/calculator-icon.jpg?s=612x612&w=0&k=20&c=3I_ysyPjwaT2tBtDL2s5Wjxa3cRLlozW8eH9XecMVEo="
+              alt=""
+              height="100px"
+            />
+            <br />
+            <h2>Calculator</h2>
+          </div>
+          <div
+            class="projectCard"
+            onclick="redirectToProject(`https://karthickselvendran.github.io/weather_finder`)"
+          >
+            <img
+              src="https://store-images.s-microsoft.com/image/apps.16894.c02476d2-2378-4f60-8290-b6d4b3842643.79a2ef6a-4775-4c79-8d93-9caf077660eb.1bbd88a4-0a17-4750-91a0-cd7d98f58e9d"
+              alt=""
+              height="100px"
+            />
+            <br />
+            <h2>Weather Finder</h2>
+          </div>
+          <div
+            class="projectCard"
+            onclick="redirectToProject(`https://karthickselvendran.github.io/github_profile_finder`)"
+          >
+            <img
+              src="https://s3.amazonaws.com/media.eremedia.com/uploads/2013/05/23151721/Octocat.jpg"
+              alt=""
+              height="100px"
+            />
+            <br />
+            <h2>GitHub Profile Finder</h2>
+          </div>
+          <div
+            class="projectCard"
+            onclick="redirectToProject(`https://karthickselvendran.github.io/quotes_generator`)"
+          >
+            <img
+              src="https://www.seekpng.com/png/detail/41-412037_close-quote-text-type-editor-comments-quote-png.png"
+              alt=""
+              height="100px"
+            />
+            <br />
+            <h2>Quotes Generator</h2>
+          </div>
+          <div
+            class="projectCard"
+            onclick="redirectToProject(`https://karthickselvendran.github.io/contact_keeper`)"
+          >
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhqI4txTRkj4_pCfr3NlNdbCbLYgX-nqjMX8wHEfx_A6Q8luaudlecd84nMDGZ1a4nwA0&usqp=CAU"
+              alt=""
+              height="100px"
+            />
+            <br />
+            <h2>Contact Keeper</h2>
+          </div>
+          <div
+            class="projectCard"
+            onclick="redirectToProject(`https://mernstackonlinetraining.github.io/instagram_clone`)"
+          >
+            <img
+              src="https://drive.google.com/uc?id=1PZQXHT322xDddtDfeM5ZSY6cG5PxTKCR"
+              alt=""
+              height="100px"
+            />
+            <br />
+            <h2>Instagram Clone</h2>
+          </div>
+          <div
+            class="projectCard"
+            onclick="redirectToProject(`https://mernstackonlinetraining.github.io/ecommerce_flipkart`)"
+          >
+            <img
+              src="https://drive.google.com/uc?id=1koO9D0qMvYMY3b2H5jED3moCDTxslD5c"
+              alt=""
+              height="100px"
+            />
+            <br />
+            <h2>Flipkart Clone</h2>
+          </div>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <h1>About Us</h1>
+        <div class="divider-custom">
+          <span class="divider-custom-line"></span>
+          <img
+            src="https://static.vecteezy.com/system/resources/previews/009/381/053/original/mobile-game-golden-star-clipart-design-illustration-free-png.png"
+            alt=""
+            height="20px"
+          />
+          <span class="divider-custom-line"></span>
+        </div>
+        <br />
+        <div class="aboutContainer">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+            fuga, nam veritatis reprehenderit repudiandae doloremque similique
+            perspiciatis porro velit, molestias illum earum asperiores
+            repellendus mollitia blanditiis explicabo ipsa! Porro, ipsa.
+            Veritatis expedita voluptates est dignissimos unde sapiente officia
+            harum, sed nesciunt ratione nulla quos! Voluptatem, eos! Eos modi
+            maxime quaerat, ipsa earum, quod unde fugiat officia, voluptate aut
+            nulla eveniet.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+            fuga, nam veritatis reprehenderit repudiandae doloremque similique
+            perspiciatis porro velit, molestias illum earum asperiores
+            repellendus mollitia blanditiis explicabo ipsa! Porro, ipsa.
+            Veritatis expedita voluptates est dignissimos unde sapiente officia
+            harum, sed nesciunt ratione nulla quos! Voluptatem, eos! Eos modi
+            maxime quaerat, ipsa earum, quod unde fugiat officia, voluptate aut
+            nulla eveniet.
+          </p>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <h1>Contact Me</h1>
+        <div class="divider-custom">
+          <span class="divider-custom-line"></span>
+          <img
+            src="https://static.vecteezy.com/system/resources/previews/009/381/053/original/mobile-game-golden-star-clipart-design-illustration-free-png.png"
+            alt=""
+            height="20px"
+          />
+          <span class="divider-custom-line"></span>
+        </div>
+        <br />
+        <div class="contactContainer">
+          <form action="">
+            <input type="text" placeholder="Full name" required />
+            <br />
+            <br />
+            <input type="email" placeholder="Email address" required />
+            <br />
+            <br />
+            <input type="number" placeholder="Phone number" required />
+            <br />
+            <br />
+            <input type="text" placeholder="Place" required />
+            <br />
+            <br />
+            <textarea
+              placeholder="Message"
+              name=""
+              id=""
+              cols="35"
+              rows="10"
+              minlength="1"
+              required
+            ></textarea>
+            <br />
+            <br />
+            <button class="sendButton">Send</button>
+          </form>
+        </div>
+        <br />
+      </section>
+    </main>
+    <footer>
+      <p>Copyright &copy; MERN Training 2023</p>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
